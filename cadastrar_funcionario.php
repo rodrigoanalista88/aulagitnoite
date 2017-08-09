@@ -2,7 +2,7 @@
 	$nome = $_POST['nome'];
 	$email = $_POST['email'];
 
-	$con = mysqli_connect("localhost","root","","git2");           
+	$con = mysqli_connect("localhost","root","coti","git2");           
             
 	$sql = "insert into funcionario values(null,'".$nome."','".$email."')";
 

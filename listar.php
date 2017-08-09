@@ -14,15 +14,15 @@
                 <a href="index.html">Voltar</a>
                 <table class="table table-hover">
                     <?php
-    $con = mysqli_connect("localhost","root","","git2");           
+    $con = mysqli_connect("localhost","root","coti","git2");           
             
     $sql = "select * from funcionario";
 
     $result = mysqli_query($con, $sql);
 
-    while($row = mysql_fetch_array($result)) {
+    while($row = mysqli_fetch_array($result)) {
         echo "<tr><td>" .$row['nome'] . "</td>";
-        echo "<td>" $row['email'] . "</td></tr>";
+        echo "<td>" . $row['email'] . "</td></tr>";
     }
 
     mysqli_close($con);
